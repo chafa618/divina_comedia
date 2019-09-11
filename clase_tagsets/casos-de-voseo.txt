@@ -1,0 +1,133 @@
+# Copyright 2015 Universidad de Buenos Aires
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# ===================================================================
+
+Los casos más frecuentes de voseo son el imperativo (ej, "tocá el timbre") 
+y el presente indicativo (ej, "tocás el botón").
+El caso presente subjuntivo es menos frecuente (ej, "no lo toqués!").
+
+Los análisis siguientes fueron hechos sobre el archivo MM.verb de 
+la versión 3.1 de FreeLing:
+VERB=/proj/tools/freeling-3.1/data/es/dictionary/entries/MM.verb
+
+Cuidado, que hay algunos verbos que terminan en -ír (con tilde).
+% grep "ír " $VERB | cut -f 2 -d ' '| sort | uniq | lines2separator ' '
+desleír desoír embair engreír entreoír freír oír refreír reír sofreír sonreír
+
+Con -ar y -er eso no pasa:
+% grep "ár " $VERB | wc -l  --> 0
+% grep "ér " $VERB | wc -l  --> 0
+
+
+VERBOS PRINCIPALES (VM*)
+========================
+
+Ejemplos:
+
+tomad tomar VMM02P0   --> tomá (toma tomar VMM02S0)
+tomáis tomar VMIP2P0  --> tomás (tomas tomar VMIP2S0)
+toméis tomar VMSP2P0  --> tomés (tomes tomar VMSP2S0)
+
+corred correr VMM02P0  --> corré (corre correr VMM02S0)
+corréis correr VMIP2P0 --> corrés (corres correr VMIP2S0)
+corráis correr VMSP2P0 --> corrás (corras correr VMSP2S0)
+
+partid partir VMM02P0 --> partí (parte partir VMM02S0)
+partís partir VMIP2P0 --> partís (partes partir VMIP2S0)
+partáis partir VMSP2P0 --> partás (partas partir VMSP2S0)
+
+-----
+
+Imperativo 2a plural (VMM02P0)
+
+Todos los -ar tienen imperativo -ad.
+% grep VMM02P0 $VERB | grep "ar " | grep -v "ad " | wc -l  --> 0
+
+Todos los -er tienen imperativo -ed.
+% grep VMM02P0 $VERB | grep "er " | grep -v "ed " | wc -l  --> 0
+
+Casi todos los -ir tienen imperativo -id.
+% grep VMM02P0 $VERB | grep "ir "| grep -v "id " | wc -l  --> 1
+
+Todos los -ír tienen imperativo -íd.
+% grep VMM02P0 $VERB | grep "ír "| grep -v "íd " | wc -l  --> 0
+
+Casos raros:
+embaíd embair VMM02P0
+
+-----
+
+Presente Indicativo 2a plural (VMIP2P0)
+
+Casi todos los -ar tienen presente indicativo -áis.
+% grep VMIP2P0 $VERB | grep "ar " | grep -v "áis " | wc -l  --> 1
+
+Casi todos los -er tienen presente indicativo -éis.
+% grep VMIP2P0 $VERB | grep "er " | grep -v "éis " | wc -l  --> 1
+
+Casi todos los -ir tienen presente indicativo -ís.
+% grep VMIP2P0 $VERB | grep "ir " | grep -v "ís " | wc -l  --> 1
+
+Todos los -ír tienen presente indicativo -ís.
+% grep VMIP2P0 $VERB | grep "ír " | grep -v "ís " | wc -l  --> 0
+
+Casos raros:
+dais dar VMIP2P0
+veis ver VMIP2P0
+vais ir VMIP2P0
+
+-----
+
+Presente Subjuntivo 2a plural (VMSP2P0)
+
+Casi todos los -ar tienen presente subjuntivo -éis.
+% grep VMSP2P0 $VERB | grep "ar " | grep -v "éis " | wc -l  --> 1
+
+Todos los -er tienen presente subjuntivo -áis.
+% grep VMSP2P0 $VERB | grep "er " | grep -v "áis " | wc -l  --> 0
+
+Todos los -ir tienen presente subjuntivo -áis.
+% grep VMSP2P0 $VERB | grep "ir " | grep -v "áis " | wc -l  --> 0
+
+Todos los -ír tienen presente subjuntivo -áis.
+% grep VMSP2P0 $VERB | grep "ír " | grep -v "áis " | wc -l  --> 0
+
+Casos raros:
+deis dar VMSP2P0
+
+
+OTROS VERBOS (AUXILIARES, SEMIAUXILIARES, ETC.)
+===============================================
+
+# Presente indicativo 2a singular (--IP2S0)
+% grep IP2S0 $VAUX
+eres ser VSIP2S0  --> sos
+estás estar VAIP2S0 --> estás
+has haber VAIP2S0  --> habés
+has haber VMIP2S0  --> habés
+
+# Presente subjuntivo 2a singular (--SP2S0)
+% grep SP2S0 $VAUX
+estés estar VASP2S0 --> estés
+hayas haber VASP2S0 --> hayás
+hayas haber VMSP2S0 --> hayás
+seas ser VSSP2S0 --> seás
+
+# Imperativo 2a singular (--M02S0)
+% grep M02S0 $VAUX
+está estar VAM02S0 --> está
+sé ser VSM02S0 --> sé
+
+-----
