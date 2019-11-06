@@ -23,25 +23,31 @@ class Counter_entities(object):
             archivo = json.load(f)
         return archivo
         
-    def get_keys(self):
+    def get_ents(self):
+        """
+        Obtain entity values ( r'\[.+?\]' ) for each sent of an intent (key) in a trainingset json file
+        """
         open_file = self.load_json()
         
         entidadRe = re.compile(r'\[.+?\]')
-        entidades = []
+        #entidades = []
         dic = {}
 
-        for intent in open_file['intents'].keys():
+        for intent in open_file['intents'].keys(): # Recorro mirando cada intent
             dic[intent] = []
 
-            for utterance in open_file['intents'][intent]:
+            for utterance in open_file['intents'][intent]: # Recorro mirando cada oracion en cada intent
                 ent = re.findall(entidadRe,utterance)
 
                 if len(ent) >= 1:  
                     dic[intent].append(ent)
+                else:
+                    dic[intent].extend(ent)
+
         return dic
 
     def count_ents_for_intent(self):
-        claves = self.get_keys()
+        claves = self.get_ents()
 
         output = {}
         for intent in claves:
