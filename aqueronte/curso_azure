@@ -1,0 +1,43 @@
+Cloud services:
+alta disponibilidad de recursos
+escalabilidad: scale up, scale down, scale in, scale out
+Tolerancia frente a fallas. 
+elasticidad (tiene que ver con la automatizacion de la escalabilidad)
+agilidad
+alcance global.
+Costo basado en el consumo: Uso > pago, no uso > no pago
+
+Economía de escala: Se supone que el costo es menor porque los provedores comprar hardward de a montones. 
+CapEx: capital expenditure
+OpEx: operational Expenditure. El gasto de un servicio en la nube es un OpEx
+
+Modelos de nube::
+Nube pública: no CaPex. Agilidad. Consmption based model. (responsabilidad compartida! Ojo.)
+Nube privada: podemos aprovisionar recursos sin necesidad de operación humana. La organización tiene el control de los recursos, es dueña de la parte física. Seguridad 
+Nube hibrida: permite correr determinadas apps en una locación determinada (gobierno, hospitales... etc). Flexibilidad
+
+
+Tipos de servicios:
+IaaS: infrastructure as a Service. infraestructura como servicio. Alquilas la pc a alguien. Soy responsable del SO y las a  pp
+
+PasS: Platform as a Service. La orga no es responsable del sistema operativo, sino que se enfoca en la plataforma. El mantenimiento del SO queda a cargo del provedor de la nube. Se usa sobre todo como framework,(productividad: no pierdo tiempo en configuración)
+
+SaaS: Software as a Service: Office 365. Como usuario me conecto y hago uso del servicio. Modelos por suscripcion. 
+
+
+Azure:
+Regiones zonas donde hay varios centros de datos, existen regiones pares que se sirven de apoyo una a otra a la hora de actualizar o si hubiera un incidente.
+Geografías: engloban varias regiones, son 5
+
+IASS - MV
+Availability sets: Si pongo una MV en un rack y otra igual en un sgundo rack, ante una incidencia en el primero, mi sitio seguiria vivo en el segundo.
+Update Domain: (hasta 20 en azure), es como un orden de prioridad para updates. Configurar los FD le otorga agilidad al servicio.
+Fault Domain:
+Para mas SLA (99,99) debería configurar un Availability Zone (no disponible en todas las regiones).
+
+----
+
+Azure container instance (PaaS) 
+Azure Kubernetes services (PaaS) Orquestador de contenedores, decide si apaga, prende o copia un o vario contenedor
+-------
+Azure management tool
