@@ -1,0 +1,42 @@
+{
+    "ent.bill": {
+        "canon": false,
+        "label": false
+    },
+    "ent.concept": {
+        "canon": false,
+        "label": false
+    },
+    "ent.device_mobile": {
+        "canon": false,
+        "label": false
+    },
+    "ent.item": {
+        "canon": false,
+        "label": false
+    },
+    "ent.mobile_data": {
+        "canon": false,
+        "label": false
+    },
+    "ent.payment_card": {
+        "canon": false,
+        "label": false
+    },
+    "ent.payment_creditcard": {
+        "canon": false,
+        "label": false
+    },
+    "ent.payment_scratchcard": {
+        "canon": false,
+        "label": false
+    },
+    "ent.payment_sos": {
+        "canon": false,
+        "label": false
+    },
+    "ent.service": {
+        "canon": false,
+        "label": false
+    }
+}

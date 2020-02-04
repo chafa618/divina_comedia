@@ -1,0 +1,189 @@
+[
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Holu;I;None;intent.common.greetings;[];[];domain.common;domain.common"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfDan alg\u00fan programa de aventuras hoy?;E;intent.tv.content_get_info;intent.tv.content_get_info;\"[\"\"{'_Entity__name': 'hoy'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfQu\u00e9 puedo ver ma\u00f1ana a las 8 de la noche por boomerang?;E;intent.tv.content_get_info;intent.tv.content_get_info;\"[\"\"{'_Entity__name': 'a las 8 de la noche'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfa las 3 de la tarde qu\u00e9 dan en la tele?;E;intent.tv.content_get_info;intent.tv.content_get_info;\"[\"\"{'_Entity__name': 'a las 3 de la tarde'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Pas\u00e1 la serie a la tele;E;intent.tv.display;intent.tv.display;\"[\"\"{'_Entity__name': 'tele'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Poneme table 19 en la tv;DEI;None;intent.tv.display;[];[{'value': 'table 19'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Poner 12 monos en la tv;DEI;None;intent.tv.display;[];[{'value': '12 monos'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Quiero poner el documental de la cuna a la tumba en el tele;E;intent.tv.display;intent.tv.display;\"[\"\"{'_Entity__name': 'la cuna'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Quiero ver 12 monos en la televisi\u00f3n;E;intent.tv.display;intent.tv.display;\"[\"\"{'_Entity__name': 'monos'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Reproducir predator 2 en la tele;DEI;None;intent.tv.display;[];[{'value': 'predator 2'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Ver la libertadores por la tele ahora;EI;intent.tv.content_get_info;intent.tv.display;\"[\"\"{'_Entity__name': 'ahora'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfMe pas\u00e1s el tercer cap\u00edtulo de la temporada 1 de runaways por la tele?;E;intent.tv.display;intent.tv.display;\"[\"\"{'_Entity__name': 'tercer cap\u00edtulo'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfEn qu\u00e9 horario est\u00e1 Tiene la palabra hoy?;E;intent.tv.question_time_loc;intent.tv.question_time_loc;\"[\"\"{'_Entity__name': 'Tiene la palabra'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfEn qu\u00e9 horario transmiten hoy killing lincoln?;E;intent.tv.question_time_loc;intent.tv.question_time_loc;\"[\"\"{'_Entity__name': 'hoy killing lincoln'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfEst\u00e1 david rocco's dolce africa este s\u00e1bado?;E;intent.tv.question_time_loc;intent.tv.question_time_loc;\"[\"\"{'_Entity__name': 'este s\u00e1bado'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfPor qu\u00e9 canal pasan independiente vs. temperley ma\u00f1ana?;E;intent.tv.question_time_loc;intent.tv.question_time_loc;\"[\"\"{'_Entity__name': 'temperley ma\u00f1ana'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Buscar supercampeones;I;intent.tv.display;intent.tv.search;\"[\"\"{'_Entity__name': 'supercampeones'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Quiero ver una pel\u00edcula de miedo;E;intent.tv.search;intent.tv.search;\"[\"\"{'_Entity__name': 'miedo'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Una de alicia johnston quiero ver;E;intent.tv.search;intent.tv.search;\"[\"\"{'_Entity__name': 'alicia johnston'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Ver partidos de san lorenzo;EI;None;intent.tv.search;[];[{'value': 'partidos'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Ver una peli con la china su\u00e1rez;E;intent.tv.search;intent.tv.search;\"[\"\"{'_Entity__name': 'la china su\u00e1rez'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfMe busc\u00e1s la temporada 2 de h2o?;EI;None;intent.tv.search;[];[{'value': 'temporada 2'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfQu\u00e9 puedo ver este finde?;I;intent.tv.content_get_info;intent.tv.search;\"[\"\"{'_Entity__name': 'este finde'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfTen\u00e9s alguna serie para m\u00ed?;DEI;None;intent.tv.search;[];[{'value': 'serie'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "este viernes quiero ver algo tipo Bita e os Animais \u00bfqu\u00e9 me suger\u00eds?;EI;intent.tv.content_get_info;intent.tv.search_similar;\"[\"\"{'_Entity__name': 'este viernes'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfAlguna que se parezca ataque a pearl harbor ten\u00e9s?;E;intent.tv.search_similar;intent.tv.search_similar;\"[\"\"{'_Entity__name': 'a pearl harbor'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfAlguna tipo La Profec\u00eda para ver esta noche?;E;intent.tv.search_similar;intent.tv.search_similar;\"[\"\"{'_Entity__name': 'La Profec\u00eda para ver esta noche'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfTen\u00e9s alguna onda N C I S Nueva Orleans?;E;intent.tv.search_similar;intent.tv.search_similar;\"[\"\"{'_Entity__name': 'N C I S Nueva Orleans'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "El amigo de mi primo tiene un auto rojo;DI;intent.tv.display;None;\"[\"\"{'_Entity__name': 'mi primo tiene un auto rojo'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Es una empresa de la construcci\u00f3n;DI;intent.common.swearwords;None;[];[];domain.common;None"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Llam\u00e9 a los del delivery y nunca vinieron;DI;intent.tv.display;None;\"[\"\"{'_Entity__name': 'los del delivery y nunca vinieron'"
+    }
+][
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Holu;I;None;intent.common.greetings;[];[];domain.common;domain.common"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfDan alg\u00fan programa de aventuras hoy?;E;intent.tv.content_get_info;intent.tv.content_get_info;\"[\"\"{'_Entity__name': 'hoy'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfQu\u00e9 puedo ver ma\u00f1ana a las 8 de la noche por boomerang?;E;intent.tv.content_get_info;intent.tv.content_get_info;\"[\"\"{'_Entity__name': 'a las 8 de la noche'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfa las 3 de la tarde qu\u00e9 dan en la tele?;E;intent.tv.content_get_info;intent.tv.content_get_info;\"[\"\"{'_Entity__name': 'a las 3 de la tarde'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Pas\u00e1 la serie a la tele;E;intent.tv.display;intent.tv.display;\"[\"\"{'_Entity__name': 'tele'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Poneme table 19 en la tv;DEI;None;intent.tv.display;[];[{'value': 'table 19'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Poner 12 monos en la tv;DEI;None;intent.tv.display;[];[{'value': '12 monos'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Quiero poner el documental de la cuna a la tumba en el tele;E;intent.tv.display;intent.tv.display;\"[\"\"{'_Entity__name': 'la cuna'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Quiero ver 12 monos en la televisi\u00f3n;E;intent.tv.display;intent.tv.display;\"[\"\"{'_Entity__name': 'monos'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Reproducir predator 2 en la tele;DEI;None;intent.tv.display;[];[{'value': 'predator 2'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Ver la libertadores por la tele ahora;EI;intent.tv.content_get_info;intent.tv.display;\"[\"\"{'_Entity__name': 'ahora'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfMe pas\u00e1s el tercer cap\u00edtulo de la temporada 1 de runaways por la tele?;E;intent.tv.display;intent.tv.display;\"[\"\"{'_Entity__name': 'tercer cap\u00edtulo'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfEn qu\u00e9 horario est\u00e1 Tiene la palabra hoy?;E;intent.tv.question_time_loc;intent.tv.question_time_loc;\"[\"\"{'_Entity__name': 'Tiene la palabra'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfEn qu\u00e9 horario transmiten hoy killing lincoln?;E;intent.tv.question_time_loc;intent.tv.question_time_loc;\"[\"\"{'_Entity__name': 'hoy killing lincoln'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfEst\u00e1 david rocco's dolce africa este s\u00e1bado?;E;intent.tv.question_time_loc;intent.tv.question_time_loc;\"[\"\"{'_Entity__name': 'este s\u00e1bado'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfPor qu\u00e9 canal pasan independiente vs. temperley ma\u00f1ana?;E;intent.tv.question_time_loc;intent.tv.question_time_loc;\"[\"\"{'_Entity__name': 'temperley ma\u00f1ana'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Buscar supercampeones;I;intent.tv.display;intent.tv.search;\"[\"\"{'_Entity__name': 'supercampeones'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Quiero ver una pel\u00edcula de miedo;E;intent.tv.search;intent.tv.search;\"[\"\"{'_Entity__name': 'miedo'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Una de alicia johnston quiero ver;E;intent.tv.search;intent.tv.search;\"[\"\"{'_Entity__name': 'alicia johnston'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Ver partidos de san lorenzo;EI;None;intent.tv.search;[];[{'value': 'partidos'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Ver una peli con la china su\u00e1rez;E;intent.tv.search;intent.tv.search;\"[\"\"{'_Entity__name': 'la china su\u00e1rez'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfMe busc\u00e1s la temporada 2 de h2o?;EI;None;intent.tv.search;[];[{'value': 'temporada 2'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfQu\u00e9 puedo ver este finde?;I;intent.tv.content_get_info;intent.tv.search;\"[\"\"{'_Entity__name': 'este finde'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfTen\u00e9s alguna serie para m\u00ed?;DEI;None;intent.tv.search;[];[{'value': 'serie'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "este viernes quiero ver algo tipo Bita e os Animais \u00bfqu\u00e9 me suger\u00eds?;EI;intent.tv.content_get_info;intent.tv.search_similar;\"[\"\"{'_Entity__name': 'este viernes'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfAlguna que se parezca ataque a pearl harbor ten\u00e9s?;E;intent.tv.search_similar;intent.tv.search_similar;\"[\"\"{'_Entity__name': 'a pearl harbor'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfAlguna tipo La Profec\u00eda para ver esta noche?;E;intent.tv.search_similar;intent.tv.search_similar;\"[\"\"{'_Entity__name': 'La Profec\u00eda para ver esta noche'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "\u00bfTen\u00e9s alguna onda N C I S Nueva Orleans?;E;intent.tv.search_similar;intent.tv.search_similar;\"[\"\"{'_Entity__name': 'N C I S Nueva Orleans'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "El amigo de mi primo tiene un auto rojo;DI;intent.tv.display;None;\"[\"\"{'_Entity__name': 'mi primo tiene un auto rojo'"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Es una empresa de la construcci\u00f3n;DI;intent.common.swearwords;None;[];[];domain.common;None"
+    },
+    {
+        "phrase;different;intent_obtained;intent_expected;entities_obtained;entities_expected;domain_obtained;domain_expected": "Llam\u00e9 a los del delivery y nunca vinieron;DI;intent.tv.display;None;\"[\"\"{'_Entity__name': 'los del delivery y nunca vinieron'"
+    }
+]
