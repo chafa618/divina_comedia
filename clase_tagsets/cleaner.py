@@ -51,7 +51,7 @@ class Concept:
 	def msi(self):
 		return self._msi
 
-freeling = "ES.dict" 
+freeling = "freeling_es_sm.dict" 
 freelingList = []
 #parseo todas las lineas y las meto en la estructura correspondiente
 for line in open(freeling, 'r', encoding='cp1252'):

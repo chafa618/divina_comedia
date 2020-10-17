@@ -1,7 +1,7 @@
 
 import cleaner
 
-freeling = "ES.dict" 
+freeling = "freeling_es_sm.dict" 
 freelingList = []
 #parseo todas las lineas y las meto en la estructura correspondiente
 for line in open(freeling, 'r', encoding='cp1252'):
@@ -16,5 +16,5 @@ for line in open(freeling, 'r', encoding='cp1252'):
 		lemmas.append(Concept(parsedLine[i], parsedLine[i+1]))
 	freelingList.append(FreelingLine(parsedLine[0], lemmas))
 #Agarro la primera linea de freeling e imprimo el concepto y el
-print("Concepto: " + freelingList[0].word() + " msi: " + freelingList[0].lemmas()[0].msi())
+print("Item: " + freelingList[0].word() + " msi: " + freelingList[0].lemmas()[0].msi())
 
